@@ -13,7 +13,7 @@ Route::post('GetLogin' , [DashboardController::class, 'GetLogin'])->name('Admin.
 
 Route::middleware(['Admin'])->group(function (){  
 
-Route::get('Dashboard' , [DashboardController::class, 'Dashboard'])->name('Admin.Dashboard');
+// Route::get('Dashboard' , [DashboardController::class, 'Dashboard'])->name('Admin.Dashboard');
 Route::get('category' , [CategoryController::class, 'category'])->name('Admin.category');
 Route::post('Getcategory' , [CategoryController::class, 'Getcategory'])->name('Admin.Getcategory');
 Route::get('Deletecategory/{id}' , [CategoryController::class, 'Deletecategory'])->name('Admin.Deletecategory');
